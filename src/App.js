@@ -17,22 +17,8 @@ import {
   Toolbar,
 } from '@mui/material';
 
-import axios from 'axios';
+import ProductService from './ProductService';
 
-
-const API_URL = 'https://dummyjson.com/products';
-
-const ProductService = {
-  getProducts: async () => {
-    try {
-      const response = await axios.get(API_URL);
-      return response.data.products;
-    } catch (error) {
-      console.error('Error fetching products:', error);
-      throw error;
-    }
-  },
-};
 
 // Functional component declaration
 const App = () => {
