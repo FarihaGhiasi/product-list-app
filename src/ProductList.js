@@ -56,7 +56,7 @@ const ProductList = () => {
             {product.description}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Price: ${product.price}
+           <span style={{fontWeight : 'bold'}} > Price: ${product.price} </span>
           </Typography>
         </CardContent>
       </Card>
@@ -74,7 +74,7 @@ const ProductList = () => {
     <div>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6">Products</Typography>
+          <Typography variant="h6">Product List React App</Typography>
         </Toolbar>
       </AppBar>
       <Container>
